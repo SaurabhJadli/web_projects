@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio video controls</title>
+
+    <style>
+ body {background-color: rgb(34, 90, 175);
+text-align: center;
+} 
+hr{
+    height: 5px;
+    color: red;
+}
+audio{
+    border-radius: 7%;
+}
+   </style>
+</head>
+<body>
+    <h1>
+        Demostration of Audio and Video controls
+    </h1>
+    <hr>
+<div class="audio">
+    <h3>audio control:</h3>
+    <audio controls autoplay>
+       <source src = "musik.mp3" type = "audio/mp3" />
+       Your browser does not support the <audio> element.
+    </audio>
+</div>
+    
+
+     <br><hr>
+<div class="vid">
+   <h3>video control:</h3>
+    <video  width = "600" height = "400" controls autoplay>
+        
+        <source src = "nature.mp4" type = "video/mp4" />
+        Your browser does not support the <video> element.
+     </video>
+</div>
+
+
+
+</body>
+</html>

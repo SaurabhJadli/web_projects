@@ -1,0 +1,85 @@
+<!--WAP to demonstrate inline/internal style sheets -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementation of inline and internal css</title>
+    <style>
+        table, th, td, tr{
+            border: 2px;
+            border-color: black;
+            border-style: solid;
+        }
+        p{
+            color: rgb(156, 25, 168);
+            font-family: Arial, sans-serif;
+            margin-left: 3%;
+        }
+        .dpik{
+            border-radius: 10%;
+            margin: auto;
+            border: 5px;
+            border-color: black;
+            border-style: solid;
+            margin-left: 25%;
+            margin-right: 50%;
+        }
+        button{
+            height: 30px;
+            border-radius: 15%;
+            border-color: blue;
+        }
+    </style>
+</head>
+<body style="background-color: hwb(0 85% 11%);">
+    <center>
+        <h1  style="color:darkred;">Inline and Internal CSS</h1>
+    </center>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi quia voluptatibus excepturi officiis velit ea sapiente nesciunt delectus nemo nihil laboriosam atque pariatur, quo amet, nisi sequi eaque beatae.</p>
+    <table style="width: 50%; border-collapse: collapse; margin: auto;">
+        <tr>
+            <th style="background-color: #f2f2f2;">sno</th>
+            <th>Name</th>
+            <th style="background-color: #f2f2f2;">attribute</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>img</td>
+            <td>scr, height, weith</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>a</td>
+            <td>href, target</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>input</td>
+            <td>type, name, values</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>button</td>
+            <td>type, name, values</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>form</td>
+            <td>action, method, target</td>
+        </tr>
+    </table>
+<br>
+    <img class="dpik" src="cloud_cherry.jpg" alt="pokimOn dragonite" style="height: 350px; width: 500px;">
+    <br><br><br><hr><br>
+    <center>
+        <label for="" style="font-family: Verdana,sans-serif;">Enter Comment: </label>
+        <input type="text" style="width: 46%; height:25px; border-radius: 2%;">
+    <button style="background-color: blueviolet;" type="submit">
+        Submit
+    </button>
+    </center>
+  
+</body>
+</html>

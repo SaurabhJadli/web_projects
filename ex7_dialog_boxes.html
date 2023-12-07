@@ -1,0 +1,55 @@
+<!--WAP to demonstrate dialog boxes in JavaScript.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Dialog Boxes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+      background-color:bisque;
+    }
+    button {
+      margin: 10px;
+      padding: 8px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>JavaScript Dialog Boxes</h1>
+
+  <button onclick="showAlert()">Show Alert</button>
+  <button onclick="showConfirm()">Show Confirm</button>
+  <button onclick="showPrompt()">Show Prompt</button>
+
+  <script>
+    function showAlert() {
+      window.alert("This is an alert box!");
+    }
+
+    function showConfirm() {
+      var result = window.confirm("Do you like JavaScript?");
+      if (result) {
+        window.alert("You clicked OK!");
+      } else {
+        window.alert("You clicked Cancel!");
+      }
+    }
+
+    function showPrompt() {
+      var userInput = window.prompt("Enter your name:", "John Doe");
+      if (userInput !== null) {
+        window.alert("Hello, " + userInput + "!");
+      } else {
+        window.alert("You clicked Cancel or closed the prompt!");
+      }
+    }
+  </script>
+
+</body>
+</html>
